@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background:rgb(250, 247, 247);
+    background-size: cover;
+}
+
+header{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+    justify-content: center;
+    background-color: crimson;
+}
+
+h1 a{
+    color: #fff;
+    cursor: pointer;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.calculator{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 20px black;
+    max-width: 300px;
+    background-color: rgb(15, 15, 15);
+    height: 450px;
+    margin: 30px auto;
+}
+
+.display{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-column: span 4;
+    padding: 20px;
+    color: white;
+    background-color: skyblue;
+}
+
+#result{
+    font-size: 40px;
+    font-weight: 700px;
+   word-break: break-all;
+   word-wrap: break-word;
+}
+
+button{
+    border-radius: 8px;
+    border: none;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    align-items: center;
+}
+
+button:hover{
+    background-color: crimson;
+    color: white;
+}
+
+#clear-button{
+    grid-column: span 2;
+    background-color: aqua;
+    color: white;
+}
+
+#dlt-button{
+    grid-column: span 2;
+    color: white;
+    background-color: crimson;
+}
+
+#equal-button{
+    grid-column: span 4;
+    background-color: skyblue;
+    color: white;
+}
+#clear-button:hover,#equal-button:hover{
+    background-color: crimson;
+    color: white;
+}
+
+footer{
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    color: rgb(10, 10, 10);
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
