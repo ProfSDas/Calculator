@@ -93,7 +93,7 @@ button:hover{
     color: white;
 }
 
-footer{
+footer marquee{
     bottom: 0;
     display: flex;
     justify-content: center;
